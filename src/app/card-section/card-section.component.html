@@ -1,0 +1,31 @@
+<section>
+  <div class="section_inner" *ngIf="!!this.missions">
+    <div class="card" *ngFor="let mission of this.missions; index as i">
+      <div class="image"><img
+          src="{{mission.links.mission_patch}}"
+          alt=""></div>
+      <div class="name">
+        <h2> {{mission.mission_name}} #{{i}}</h2>
+      </div>
+      <div class="mission_ids">
+        <h3>Mission Ids: </h3>
+        <ul>
+          <li *ngFor="let id of mission.mission_id">{{id}} </li>
+        </ul>
+      </div>
+      <div class="launch_year">
+        <h3>Launch Year: </h3>
+        <p>{{mission.launch_year}}</p>
+      </div>
+      <div class="successful_launch">
+        <h3>Successful Launch: </h3>
+        <p>{{mission.launch_success}}</p>
+      </div>
+      <div class="successful_landing">
+        <h3>Successful Landing: </h3>
+        <p>{{mission.rocket.first_stage.cores[0].land_success}}</p>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,16 @@
+header{
+  width: 100%;
+  padding: 8px 30px;
+  background-color: rgb(236, 236, 236);
+}
+h1{
+  font-size: 28px;
+}
+
+@media only screen and (min-width: 700px) {
+header{
+  position: fixed;
+  top: 0;
+}
+}
+

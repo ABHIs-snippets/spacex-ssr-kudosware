@@ -1,0 +1,64 @@
+section{
+  width: 100%;
+}
+.section_inner{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  width: 100%;
+  max-width: 450px;
+  margin: 8px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.card>div{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.image{
+  background-color: rgb(236, 236, 236);
+}
+.name{
+  font-size: 16px;
+  margin: 8px 0 12px;
+  color: rgb(67, 67, 196);
+}
+h3{
+  font-size: 18px;
+  margin: 4px 8px 4px 0px;
+}
+.mission_ids h3{
+  width: 100%;
+}
+.mission_ids ul{
+  padding-left: 14px;
+}
+ul li,p{
+  font-size: 16px;
+  color: rgb(83, 83, 83);
+}
+
+@media only screen and (min-width: 700px) {
+.card{
+  width: 48%;
+  margin: 0px auto 16px;
+}
+.section_inner{
+  padding-top: 0;
+}
+}
+@media only screen and (min-width: 1024px) {
+.card{
+  width: 24%;
+}
+}
+@media only screen and (min-width: 1440px) {
+
+}

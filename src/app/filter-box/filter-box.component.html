@@ -1,0 +1,25 @@
+<section>
+<h3>Filters</h3>
+<div class="section_inner">
+<div class="filter_choice">
+  <h4>Launch Year</h4>
+  <div class="choice_btns">
+    <button *ngFor="let year of this.years" (click)="update_yr(year,$event)">{{year}}</button>
+  </div>
+</div>
+<div class="filter_choice">
+  <h4>Successful Launch</h4>
+  <div class="choice_btns">
+    <button (click)="update_launch('true',$event)">True</button>
+    <button (click)="update_launch('false',$event)">False</button>
+  </div>
+</div>
+<div class="filter_choice">
+  <h4>Successful Landing</h4>
+  <div class="choice_btns">
+    <button (click)="update_landing('true',$event)">True</button>
+    <button (click)="update_landing('false',$event)">False</button>
+  </div>
+</div>
+</div>
+</section>
